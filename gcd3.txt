@@ -1,0 +1,9 @@
+from math import gcd
+x = int(input("Enter 1st number : "))
+y = int(input("Enter 2nd number : "))
+z = int(input("Enter 3rd number : "))
+gcd1 = gcd(y,z)
+gcd2 = gcd(x,gcd1)
+lcm1 = y*z//gcd1
+lcm2 = x*lcm1//gcd(x,lcm1)
+print("The gcd numbers is " + str(gcd2) + " and lcm is "+ str(lcm2))

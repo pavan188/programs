@@ -1,0 +1,10 @@
+def gcd(a,b):
+	if a==0:
+		return b
+	else:
+		return(gcd(b%a,a))
+x = int(input("Enter the first number : "))
+y = int(input("Enter the second number : "))
+c = gcd(x,y) 
+d = x*y//c
+print("The gcd of is " + str(ans1) + " and lcm is "+ str(ans2))
